@@ -18,7 +18,6 @@ La cartella data contiene 8 file csv che serviranno per la costruzione del grafo
 * `photo_tags.csv`; relazioni di un tag su un post
 * `photos.csv`; le foto uploadate da un certo utente
 * `tags.csv`; i tag scritti 
-* `test.csv`; un mini csv di tre righe usato come test per il salvataggio dei file in docker
 * `users.csv`; gli utenti della piattaforma  
 
 Nella cartella media verrano invece salvate tulle le immagini che serviranno come corredo ai commenti markdown del notebook; ad esempio per la spiegazione dello schema del grafo.
