@@ -19,6 +19,8 @@ La cartella data contiene 8 file csv che serviranno per la costruzione del grafo
 * `photos.csv`; le foto uploadate da un certo utente
 * `tags.csv`; i tag scritti 
 * `users.csv`; gli utenti della piattaforma  
+* `test.csv`; nel primo commit github è stato pubblicato anche questo mini test
+usato appunto per testare e capire dove venivano salvati i file csv sul container. Potrebbe sparire in altre versioni del codice.
 
 Nella cartella media verrano invece salvate tulle le immagini che serviranno come corredo ai commenti markdown del notebook; ad esempio per la spiegazione dello schema del grafo.
 
