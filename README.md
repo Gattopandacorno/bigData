@@ -8,11 +8,12 @@ L'utente dovra' quindi seguire le istruzioni date dai commenti del notebook come
 Nel caso in cui l'utente voglia provare direttamente sul browser di neo4j le varie call (load csv, match,...) puo' accedervi come indicato sul notebook dopo aver avviato il docker container. Per scrivere le varie call basta copiare il testo dentro dopo i s.run(''' '''), ad esempio in `s.run('''match (a) return a''')` bisogna copiare solo `match (a) return a`.
 
 Per quanto riguarda l'installazione delle dipendenze python è stato usato `poetry` ma e' stato pubblicato anche un requirements.txt.
-E' quindi possibile installare le dipendenze in tre modi differenti:
-1. ``poetry install``
-2. ``pip install``
-    
-
+E' quindi possibile installare le dipendenze in due modi differenti:
+1. ```bash 
+    poetry env use python
+    poetry install
+2. ``` bash
+    pip install
 **NB**: Si puo' saltare il passaggio di download del dataset. Questo è reso possibile dal fatto che rendo disponibili gia' unzippati i file .csv necessari.
 
 ## CARTELLA DATA
