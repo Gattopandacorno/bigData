@@ -7,13 +7,16 @@ Lo scopo del progetto e' quello di guidare l'utente:
 L'utente dovra' quindi seguire le istruzioni date dai commenti del notebook come una sorta di "guida". 
 Nel caso in cui l'utente voglia provare direttamente sul browser di neo4j le varie call (load csv, match,...) puo' accedervi come indicato sul notebook dopo aver avviato il docker container. Per scrivere le varie call basta copiare il testo dentro dopo i s.run(''' '''), ad esempio in `s.run('''match (a) return a''')` bisogna copiare solo `match (a) return a`.
 
-Per quanto riguarda l'installazione delle dipendenze python è stato usato `poetry` ma e' stato pubblicato anche un requirements.txt.
-E' quindi possibile installare le dipendenze in due modi differenti:
+Per quanto riguarda l'installazione delle dipendenze python è stato usato `poetry` ma pyproject.toml viene letto anche dal comando pip e sara' quindi possibile installarlo anche in quel modo
+Si riportano i due modi per farlo:
 1. ```bash 
-    poetry env use python
     poetry install
 2. ``` bash
     pip install
+Se si sta utilizzando un IDE come visual studio code l'ambiente virtuale che dovra' poi essere usato per il notebook viene detectato di default e non dovrebbero essere necessari ulteriori passaggi. Quindi se si notano errori per quanto riguarda l'import delle dipendenze python si controlli il virtual env o l'env selezionato.
+
+**NB**: I comandi devono essere ovviamente lanciati da terminale nella cartella contenente pyproject.toml .
+
 **NB**: Si puo' saltare il passaggio di download del dataset. Questo è reso possibile dal fatto che rendo disponibili gia' unzippati i file .csv necessari.
 
 ## CARTELLA DATA
