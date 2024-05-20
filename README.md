@@ -36,7 +36,7 @@ Dopo aver lanciato il comando di docker questa cartella viene oscurata a qualsia
 ```bash
 sudo chmod 755 -R data  
 ```
-dove 755 sono i permessi assegnati e -R estende la modifica anche ai file della cartella.
+dove 755 sono i permessi assegnati e -R estende la modifica anche ai file nella cartella.
 In quanto non utile consultarne i file si consiglia di non usare il comando, nel caso dovesse servire consultare prima la [documentazione](https://linux.die.net/man/1/chmod) per capire anche come meglio assegnare le permission.
 Si ricorda inoltre che non è mai una buona prassi assegnare 777 come permessi in quanto non è sicuro.
 
