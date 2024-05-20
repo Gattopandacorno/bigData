@@ -32,6 +32,14 @@ La cartella data contiene 8 file csv che serviranno per la costruzione del grafo
 * `test.csv`; nel primo commit github è stato pubblicato anche questo mini test
 usato appunto per testare e capire dove venivano salvati i file csv sul container. Potrebbe sparire in altre versioni del codice.
 
+Dopo aver lanciato il comando di docker questa cartella viene oscurata a qualsiasi utente che non sia neo4j container e root. Si può riportare alle permission di una cartella consultabile anche da un altro utente con il comando:
+```bash
+sudo chmod 755 -R data  
+```
+dove 755 sono i permessi assegnati e -R estende la modifica anche ai file della cartella.
+In quanto non utile consultarne i file si consiglia di non usare il comando, nel caso dovesse servire consultare prima la [documentazione](https://linux.die.net/man/1/chmod) per capire anche come meglio assegnare le permission.
+Si ricorda inoltre che non è mai una buona prassi assegnare 777 come permessi in quanto non è sicuro.
+
 ## CARTELLA MEDIA
 In essa vengono salvate tulle le immagini che serviranno come corredo ai commenti markdown del notebook; ad esempio per la spiegazione dello schema del grafo.
 
