@@ -9,16 +9,25 @@ Nel caso in cui si voglia provare direttamente sul browser di neo4j le varie cal
 Per scrivere le varie call basta copiare il testo dentro i s.run(''' '''); ad esempio in `s.run('''match (a) return a''')` bisogna copiare solo `match (a) return a`.
 
 Per quanto riguarda l'installazione delle dipendenze python è stato usato `poetry` ma pyproject.toml viene letto anche dal comando `pip`.
+Prima di installarle ricordarsi di creare l'ambiente virtuale nel caso in cui si scelga di usare `pip`:
+```bash
+python -m venv .venv
+source .venv/bin/activate
+```
 Si riportano i due modi per installare le dipendenze:
 1. ```bash 
     poetry install
 2. ``` bash
-    pip install
+    python -m pip install requests
 Se si sta utilizzando un IDE come visual studio code l'ambiente virtuale che dovra' poi essere usato per il notebook viene detectato di default e non dovrebbero essere necessari ulteriori passaggi. 
 Se si notano errori per quanto riguarda l'import delle dipendenze python si controlli il virtual env o l'env selezionato per l'interprete python.
-Nel caso in cui ci fossero dubbi sul fatto che l'ambiente virtuale sia stato attivato ed in uso si puo' controllare con 
+Nel caso in cui ci fossero dubbi sul fatto che l'ambiente virtuale sia stato attivato si puo' controllare con 
 ```bash
 poetry env use python
+```
+o con il comando
+```bash
+which python
 ```
 
 **NB**: I comandi devono essere ovviamente lanciati da terminale nella cartella principale contenente pyproject.toml .
